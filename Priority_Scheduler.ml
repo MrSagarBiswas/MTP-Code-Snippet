@@ -170,7 +170,7 @@ let main1 () =
   print_endline "Yield Experiment: \n\nmain is Starting...\n";
   let _ = async ~priority:5 fun1 () in
   let _ = async ~priority:1 fun2 () in
-  print_endline "main is Finishing..";
+  print_endline "main is Finishing.."
 
 let () = run main1;;
 
